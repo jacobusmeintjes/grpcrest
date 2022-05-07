@@ -13,8 +13,6 @@ internal class HelloWorldAgentRest: IHelloWorldAgent
 
     public async Task<string> SayHello(string name)
     {
-        Console.WriteLine($"Saying Hello {name} from Rest");
-
         HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"/helloworld?name={name}");
 
         var response = await httpClient.SendAsync(request);

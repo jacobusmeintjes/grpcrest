@@ -1,23 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D909FD6B-6136-4482-89CA-F952A8E6A3A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld.host", "src\helloworld.host\helloworld.host.csproj", "{35A27F29-E72B-40EA-B7A7-46B2B348F198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "helloworld.host", "src\helloworld.host\helloworld.host.csproj", "{35A27F29-E72B-40EA-B7A7-46B2B348F198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld.sdk", "src\helloworld.sdk\helloworld.sdk.csproj", "{5AFB223A-1432-4613-B610-9FE837BF8301}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "helloworld.sdk", "src\helloworld.sdk\helloworld.sdk.csproj", "{5AFB223A-1432-4613-B610-9FE837BF8301}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworldgrpcrest", "src\helloworldgrpcrest\helloworldgrpcrest.csproj", "{434F7BE4-B4DA-405E-879C-A9F3805CFA47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "helloworldgrpcrest", "src\helloworldgrpcrest\helloworldgrpcrest.csproj", "{434F7BE4-B4DA-405E-879C-A9F3805CFA47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{F6E3A7C2-F23F-4A25-91EE-42F136652E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld.module.grpc", "src\modules\grpc\helloworld.module.grpc\helloworld.module.grpc.csproj", "{AAD59C39-7DE6-4AAE-A5C7-43AD29C0047D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grpc", "grpc", "{C79AFC3E-4B02-4EF0-9D54-6CC64FCE0440}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{35A27F29-E72B-40EA-B7A7-46B2B348F198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -32,10 +35,22 @@ Global
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD59C39-7DE6-4AAE-A5C7-43AD29C0047D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD59C39-7DE6-4AAE-A5C7-43AD29C0047D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD59C39-7DE6-4AAE-A5C7-43AD29C0047D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD59C39-7DE6-4AAE-A5C7-43AD29C0047D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{35A27F29-E72B-40EA-B7A7-46B2B348F198} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
 		{5AFB223A-1432-4613-B610-9FE837BF8301} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
+		{AAD59C39-7DE6-4AAE-A5C7-43AD29C0047D} = {C79AFC3E-4B02-4EF0-9D54-6CC64FCE0440}
+		{C79AFC3E-4B02-4EF0-9D54-6CC64FCE0440} = {F6E3A7C2-F23F-4A25-91EE-42F136652E25}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07BCC80F-AA2B-4217-B1AB-22820E31111A}
 	EndGlobalSection
 EndGlobal
