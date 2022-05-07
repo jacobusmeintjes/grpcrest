@@ -9,11 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld.host", "src\hell
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld.sdk", "src\helloworld.sdk\helloworld.sdk.csproj", "{5AFB223A-1432-4613-B610-9FE837BF8301}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworldgrpc", "src\helloworldgrpc\helloworldgrpc.csproj", "{38654B5F-4F86-4E40-A34E-F2843D50D03F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworldgrpcrest", "src\helloworldgrpcrest\helloworldgrpcrest.csproj", "{434F7BE4-B4DA-405E-879C-A9F3805CFA47}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworldrest", "src\helloworldrest\helloworldrest.csproj", "{3BC191DC-C1B4-4EF6-9BA4-8064428A3E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,24 +28,14 @@ Global
 		{5AFB223A-1432-4613-B610-9FE837BF8301}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AFB223A-1432-4613-B610-9FE837BF8301}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AFB223A-1432-4613-B610-9FE837BF8301}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38654B5F-4F86-4E40-A34E-F2843D50D03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38654B5F-4F86-4E40-A34E-F2843D50D03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38654B5F-4F86-4E40-A34E-F2843D50D03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38654B5F-4F86-4E40-A34E-F2843D50D03F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BC191DC-C1B4-4EF6-9BA4-8064428A3E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BC191DC-C1B4-4EF6-9BA4-8064428A3E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BC191DC-C1B4-4EF6-9BA4-8064428A3E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BC191DC-C1B4-4EF6-9BA4-8064428A3E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{35A27F29-E72B-40EA-B7A7-46B2B348F198} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
 		{5AFB223A-1432-4613-B610-9FE837BF8301} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
-		{38654B5F-4F86-4E40-A34E-F2843D50D03F} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
 		{434F7BE4-B4DA-405E-879C-A9F3805CFA47} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
-		{3BC191DC-C1B4-4EF6-9BA4-8064428A3E6F} = {D909FD6B-6136-4482-89CA-F952A8E6A3A6}
 	EndGlobalSection
 EndGlobal

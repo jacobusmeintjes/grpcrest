@@ -16,10 +16,6 @@ internal class HelloWorldAgentGrpc : IHelloWorldAgent
     {
         Console.WriteLine($"Saying Hello {name} from Grpc");
 
-        //using var channel = GrpcChannel.ForAddress("https://localhost:7176");
-        //var client = new Greeter.GreeterClient(channel);
-        //var reply = await client.SayHelloAsync(
-        //                  new HelloRequest { Name = $"{name} from GreeterClient" });
         try
         {
             var reply = await _client.SayHelloAsync(
@@ -32,6 +28,7 @@ internal class HelloWorldAgentGrpc : IHelloWorldAgent
         catch(Exception e) {
             Console.WriteLine(e);
         }
-        return "blankboy";
+
+        return "";
     }
 }
