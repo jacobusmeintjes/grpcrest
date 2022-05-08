@@ -1,14 +1,40 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
+using helloworld.host.Clients;
 using helloworld.sdk;
 using helloworld.sdk.Services.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
-BenchmarkRunner.Run<Benchmark>();
+BenchmarkRunner.Run<BenchmarkClients>();
 
-Console.WriteLine("Press any key to exit...");
-Console.ReadKey();
 
+[HtmlExporter]//, SimpleJob(launchCount: 1, warmupCount: 1, targetCount: 10, invocationCount: 10000)]
+public class BenchmarkClients
+{
+
+    [Params(100, 200, 1000)] public int IterationCount;
+    
+    private readonly RestClient _restClient = new RestClient();
+    private readonly GrpcClient _grpcClient = new GrpcClient();
+
+    [Benchmark]
+    public async Task RestGetAsync()
+    {
+        for (int i = 0; i < IterationCount; i++)
+        {
+            await _restClient.SendHello();
+        }
+    }
+
+    [Benchmark]
+    public async Task GrpcGetAsync()
+    {
+        for (int i = 0; i < IterationCount; i++)
+        {
+            await _grpcClient.SendHello();
+        }
+    }
+}
 
 [MemoryDiagnoser, SimpleJob(launchCount: 1, warmupCount: 1, targetCount: 10, invocationCount: 10000)]
 public class Benchmark
